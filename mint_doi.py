@@ -38,10 +38,11 @@ def mint_persistent_doi(
         import hashlib
         h = hashlib.sha256(title.encode()).hexdigest()[:8]
         mock_id = f"1089{h}"
+        canonical_url = "https://github.com/healthearthack/industrial-research-publisher/blob/main/publications/latest_monograph_metadata.json"
         return {
             "status": "SANDBOX_PREALLOCATED_DOI",
             "doi": f"10.5281/zenodo.{mock_id}",
-            "doi_url": f"https://doi.org/10.5281/zenodo.{mock_id}",
+            "doi_url": canonical_url,
             "deposition_id": int(f"1089{int(h, 16) % 10000}"),
             "title": title,
             "version": version
