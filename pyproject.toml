@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "industrial-research-publisher"
+version = "2.4.0"
+description = "Automated Doctoral Monograph Compiler, Ed25519 Provenance & Zenodo DOI Minting Engine"
+readme = "README.md"
+authors = [{ name = "Doctoral Candidate healthearthack", email = "admin@thepolka.cloud" }]
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31.0"
+]

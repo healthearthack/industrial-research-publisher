@@ -1,0 +1,14 @@
+{
+  "name": "industrial-research-publisher",
+  "version": "2.4.0",
+  "description": "TypeScript contracts for Automated Academic Publishing & DOI Schemas",
+  "main": "dist/publication_schema.js",
+  "types": "dist/publication_schema.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "license": "MIT"
+}

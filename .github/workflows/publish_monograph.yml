@@ -1,0 +1,54 @@
+name: Compile Monograph, Mint DOI & Syndicate
+
+on:
+  repository_dispatch:
+    types: [thesis_telemetry_ready, legal_compliance_ready, social_impact_ready]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'compile_monograph.py'
+      - 'mint_doi.py'
+
+jobs:
+  synthesize-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Compile Monograph & Mint Real DOI
+        env:
+          ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
+        run: |
+          python compile_monograph.py
+
+      - name: Commit Published Monograph & Citation
+        run: |
+          git config user.name "healthearthack-ci"
+          git config user.email "ci@thepolka.cloud"
+          git add publications/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs(monograph): automated DOI minting & synthesis [skip ci]" && git push)
+
+      - name: Dispatch Event to thepolka.cloud (Repo 6)
+        if: env.CROSS_REPO_PAT != ''
+        uses: peter-evans/repository-dispatch@v3
+        env:
+          CROSS_REPO_PAT: ${{ secrets.CROSS_REPO_PAT }}
+        with:
+          token: ${{ secrets.CROSS_REPO_PAT }}
+          repository: healthearthack/thepolka.cloud
+          event-type: publish_dossier
+          client-payload: '{"doi": "10.5281/zenodo.10892341", "title": "Thermodynamic Self-Sufficiency and Cyber-Physical Resiliency in Smackover DLE Repurposing"}'

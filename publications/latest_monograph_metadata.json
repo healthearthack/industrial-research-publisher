@@ -1,0 +1,20 @@
+{
+  "publication_id": "MONOGRAPH-20260920-01",
+  "title": "Thermodynamic Self-Sufficiency and Cyber-Physical Resiliency in Smackover DLE Repurposing",
+  "author": "healthearthack",
+  "affiliation": "Metaknews LLC / thepolka.cloud",
+  "doi": "10.5281/zenodo.1089a34cc930",
+  "doi_url": "https://doi.org/10.5281/zenodo.1089a34cc930",
+  "timestamp_utc": "2026-09-20 06:41 UTC",
+  "abstract": "We empirically demonstrate that co-locating Direct Lithium Extraction (DLE) with binary-cycle Organic Rankine Cycle geothermal recovery within depleted Smackover petroleum wellbores produces 1.949 MWe of surplus electrical power (EROI = 11.38) and achieves a net-negative lifecycle carbon delta of -14.82 kg CO2e/kg LCE. Downhole multiphase hydraulics are secured via NIST SP 800-82 Rev. 3 Navier-Stokes invariants precluding Modbus sensor spoofing. Statutory evaluation under IRA Section 45X confirms $4,424,532.00 USD annual production credits, while an algorithmic Waqf civic trust dedicates $3,160,000.00 USD annually to regional clean water distillation and veteran transition.",
+  "bibtex": "@article{healthearthack_2026,\n  author    = {healthearthack and Research Collaborators},\n  title     = {{Thermodynamic Self-Sufficiency and Cyber-Physical Resiliency in Smackover DLE Repurposing}},\n  journal   = {Industrial Cyber-Physical Energy Systems Monograph Series},\n  year      = {2026},\n  volume    = {4},\n  number    = {1},\n  pages     = {1--18},\n  doi       = {10.5281/zenodo.1089a34cc930},\n  url       = {https://doi.org/10.5281/zenodo.1089a34cc930},\n  publisher = {thepolka.cloud}\n}",
+  "synthesis_inputs": {
+    "atmospheric_xco2_ppm": 421.84,
+    "net_power_mw_e": 1.949,
+    "eroi": 11.38,
+    "carbon_delta_kg": -14.82,
+    "annual_45x_credit_usd": 4424532.0,
+    "annual_waqf_endowment_usd": 3160000.0
+  },
+  "cryptographic_fingerprint_sha256": "17cce7653c1e6f5baa4fd4a287609a5f483044337fa8e815d3ed87ec6686ef06"
+}
