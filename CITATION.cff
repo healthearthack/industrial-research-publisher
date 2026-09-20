@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this research or software, please cite it as below."
+title: "Thermodynamic Self-Sufficiency and Cyber-Physical Resiliency in Smackover DLE Repurposing"
+authors:
+  - family-names: "Kieckhefer"
+    given-names: "Andrew"
+    alias: "healthearthack"
+    affiliation: "thepolka.cloud / Metaknews LLC"
+version: 2.4.0
+date-released: 2026-09-20
+url: "https://go.thepolka.cloud"
+repository-code: "https://github.com/healthearthack/industrial-research-publisher"
+keywords:
+  - "Direct Lithium Extraction"
+  - "Smackover Formation"
+  - "Geothermal Energy"
+  - "Cyber-Physical Invariants"
+  - "NIST SP 800-82"
+  - "Veterans Transition"
+  - "Islamic Waqf Energy Equity"
+abstract: "Empirical proof that co-locating Direct Lithium Extraction with binary-cycle geothermal recovery in depleted petroleum wellbores produces +1.95 MWe surplus electricity (EROI = 11.38), abates -14.82 kg CO2e/kg LCE, and defeats Modbus sensor spoofing via NIST SP 800-82 Navier-Stokes invariants."
