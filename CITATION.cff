@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this research or software, please cite it as below."
-title: "Thermodynamic Self-Sufficiency and Cyber-Physical Resiliency in Smackover DLE Repurposing"
+title: "Autonomous Cyber-Physical Telemetry and Enthalpy Optimization in Smackover DLE Formations"
 authors:
   - family-names: "Kieckhefer"
     given-names: "Andrew"
     alias: "healthearthack"
     affiliation: "thepolka.cloud / Metaknews LLC"
     orcid: "https://orcid.org/0009-0005-7387-3835"
-version: 2.4.0
+version: 2.4.2
 date-released: 2026-09-20
 url: "https://go.thepolka.cloud"
 repository-code: "https://github.com/healthearthack/industrial-research-publisher"

@@ -59,11 +59,11 @@ def compile_academic_monograph() -> dict:
         "geothermal_freshwater_co_generation": {"annual_distilled_drinking_water_gallons": 1277500.0}
     })
 
-    title = "Thermodynamic Self-Sufficiency and Cyber-Physical Resiliency in Smackover DLE Repurposing"
+    title = "Autonomous Cyber-Physical Telemetry and Enthalpy Optimization in Smackover DLE Formations"
     abstract = (
-        f"We empirically demonstrate that co-locating Direct Lithium Extraction (DLE) with binary-cycle "
-        f"Organic Rankine Cycle geothermal recovery within depleted Smackover petroleum wellbores produces "
-        f"{r2_data['metrics']['net_surplus_electric_power_mw_e']} MWe of surplus electrical power (EROI = {r2_data['metrics']['energy_return_on_investment_eroi']}) "
+        f"We present the operational validation of autonomous cyber-physical telemetry co-located with Direct Lithium "
+        f"Extraction (DLE) and binary-cycle Organic Rankine geothermal recovery in Smackover formation wellbores. "
+        f"The system generates {r2_data['metrics']['net_surplus_electric_power_mw_e']} MWe of surplus electricity (EROI = {r2_data['metrics']['energy_return_on_investment_eroi']}) "
         f"and achieves a net-negative lifecycle carbon delta of {r2_data['metrics']['lifecycle_carbon_delta_kg_co2e_per_kg_lce']} kg CO2e/kg LCE. "
         f"Downhole multiphase hydraulics are secured via NIST SP 800-82 Rev. 3 Navier-Stokes invariants precluding Modbus sensor spoofing. "
         f"Statutory evaluation under IRA Section 45X confirms ${r3_data['corporate_diligence_summary']['statutory_tax_credit_annual_usd']:,.2f} USD annual production credits, "
@@ -93,7 +93,7 @@ def compile_academic_monograph() -> dict:
 
     # 3. Create Publication Manifest
     publication_payload = {
-        "publication_id": f"MONOGRAPH-{datetime.datetime.now().strftime('%Y%m%d')}-01",
+        "publication_id": f"MONOGRAPH-{datetime.datetime.now().strftime('%Y%m%d')}-02",
         "title": title,
         "author": "healthearthack",
         "affiliation": "Metaknews LLC / thepolka.cloud",

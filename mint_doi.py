@@ -24,7 +24,7 @@ def mint_persistent_doi(
     title: str,
     abstract: str,
     pdf_path: str,
-    version: str = "2.4.0",
+    version: str = "2.4.2",
     creators: list = None
 ) -> Dict[str, Any]:
     """
